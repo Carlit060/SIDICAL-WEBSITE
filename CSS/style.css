@@ -30,6 +30,12 @@ nav.primary-navbar ul.nav li a {
 	font-weight: bold;
 }
 
+nav.primary-navbar ul.nav li a:hover,
+nav.primary-navbar ul.nav li a:active {
+	color: white;
+
+}
+
 nav.navhome {
 	color: #707070;
 	margin-bottom: -142;
@@ -104,3 +110,9 @@ section.hero a:hover {
 	color: #FFE099;
 	background: #E5C373;
 }
+
+footer.primary-footer p {
+	font-family: 'Anton', sans-serif;
+	font-weight: bold;
+	z-index: 1;
+} 
