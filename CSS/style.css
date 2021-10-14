@@ -2,12 +2,8 @@
 nav.primary-navbar div.brand {
 	position: absolute;
 	left: calc((100% - 370px) / 2);
+	margin-top: auto;
 	z-index: 1;
-}
-
-nav.primary-navbar a div.cart-container img {
-	display: flex;
-	margin-right: auto;
 }
 
 nav.primary-navbar {
@@ -17,9 +13,7 @@ nav.primary-navbar {
 }
 
 nav.primary-navbar ul.nav {
-	display: flex;
 	list-style: none;
-	padding: 0;
 }
 
 nav.primary-navbar ul.nav li a {
@@ -30,6 +24,22 @@ nav.primary-navbar ul.nav li a {
 	font-weight: bold;
 }
 
+@media screen and (min-width: 480px) {
+	nav.primary-navbar ul.nav {
+	display: flex;	
+	list-style: none;
+	padding: 0;
+}
+	nav.primary-navbar ul.nav li a {
+	padding: 0.5rem 1rem;
+	color: #707070;
+	text-decoration: none;
+	font-family: 'Anton', sans-serif;
+	font-weight: bold;
+}
+
+}
+
 nav.primary-navbar ul.nav li a:hover,
 nav.primary-navbar ul.nav li a:active {
 	color: white;
@@ -38,7 +48,7 @@ nav.primary-navbar ul.nav li a:active {
 
 nav.navhome {
 	color: #707070;
-	margin-bottom: -142;
+	margin-bottom: -125;
 	position: relative;
 
 }
@@ -53,6 +63,15 @@ body {
 
 h1 {
 	font-family: 'Anton', sans-serif;
+	margin-top: auto;
+	margin: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+	h1 {
+     	margin-top: auto;
+	margin: 1rem;
+	}
 }
 
 section.hero {
@@ -81,17 +100,24 @@ section.hero::after {
 	z-index: 0;
 }
 
-section.hero p {
-	font-size: 5rem;
+section.hero h2 {
+	font-size: 2rem;
 	font-weight: 50;
 	font-family: 'Bebas Neue', cursive;
 	margin: 0;
 	z-index: 1;
 }
 
-section.hero h1 {
+@media screen and (min-width: 480px) {
+	section.hero h2 {
+		font-size: 5rem;
+	}
+}
+
+section.hero p {
 	font-family: 'Georama', sans-serif;
-	margin: 0;
+	font-size: 1.5rem;
+	font-weight: 700;
 	margin-bottom: 2rem;
 	z-index: 1;
 }
